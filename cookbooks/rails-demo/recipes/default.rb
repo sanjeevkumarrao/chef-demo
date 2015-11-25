@@ -14,5 +14,7 @@ application "rails-demo" do
     git 'rails-demo' do
         repository "https://github.com/mulderp/chef-demo.git"
     end
-    passenger_apache2
+    unicorn do
+        port 8080
+  end
 end
