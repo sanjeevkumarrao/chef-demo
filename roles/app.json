@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "description": "",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[unicorn]",
+    "recipe[xml]",
+    "recipe[git]",
+    "recipe[nodejs]",
+    "recipe[rails-demo]"
+  ],
+  "env_run_lists": {
+
+  }
+}
